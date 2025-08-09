@@ -29,6 +29,30 @@ void input() {
     }
 }
 
+void addition() {
+    double c;
+    c = a + b;
+    std::cout << c;
+}
+
+void subtraction(){
+    double c;
+    c = a - b;
+    std::cout << c;
+}
+
+void multiplication(){
+    double c;
+    c = a * b;
+    std::cout << c;
+}
+
+void division(){
+    double c;
+    c = a / b;
+    std::cout << c;
+}
+
 //int main for all of the initlization
 int main() {
     std::cout << "Hello, There! This is my calculator I wrote in c++\n";
@@ -39,18 +63,22 @@ int main() {
         if (option == 1) {
             std::cout << "addition selected\n";
             input();
+            addition();
         }
         if (option == 2) {
             std::cout << "subtraction selected\n";
             input();
+            subtraction();
         }
         if (option == 3) {
             std::cout << "multiplication selected\n";
             input();
+            multiplication();
         }
         if (option == 4) {
-            std::cout << "multiplication selected\n";
+            std::cout << "division selected\n";
             input();
+            division();
         }
     return 0;
     }
