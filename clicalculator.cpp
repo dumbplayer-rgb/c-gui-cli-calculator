@@ -1,4 +1,6 @@
+#include <cmath>
 #include <iostream>
+#include <math.h>
 
 int option = 10;
 
@@ -16,7 +18,7 @@ void showmenu(){
 //The double variables a and b are for the numbers for the arithmetic operations
 double a, b;
 
-//This is the input for all of the arithmetic oparations
+//This is the input for all of the arithmetic operations
 void input() {
     if (option != 6) { // square root only needs one number
         std::cout << "Enter first number: ";
@@ -53,6 +55,18 @@ void division(){
     std::cout << c;
 }
 
+void root(){
+    double c;
+    c = a / a;
+    std::cout << c;
+}
+
+void sqroot(){
+    double c;
+    c = sqrt(a);
+    std::cout << c;
+}
+
 //int main for all of the initlization
 int main() {
     std::cout << "Hello, There! This is my calculator I wrote in c++\n";
@@ -79,6 +93,16 @@ int main() {
             std::cout << "division selected\n";
             input();
             division();
+        }
+        if (option == 5){
+            std::cout << "root selected";
+            input();
+            root();
+        }
+        if (option == 6){
+            std::cout << "square root selected";
+            input();
+            sqroot();
         }
     return 0;
     }
