@@ -31,6 +31,7 @@ void input() {
     }
 }
 
+//All of the functions for all of the arithmetic oparations including addition subtraction divsion multiplication root and square root
 void addition() {
     double c;
     c = a + b;
@@ -71,8 +72,7 @@ void sqroot(){
 int main() {
     std::cout << "Hello, There! This is my calculator I wrote in c++\n";
     showmenu();
-    int mainloop = 1;
-    while (mainloop == 1) {
+    while (true) {
         std::cin >> option;
         if (option == 1) {
             std::cout << "addition selected\n";
@@ -103,6 +103,10 @@ int main() {
             std::cout << "square root selected";
             input();
             sqroot();
+        }
+        if (option == 7){
+            std::cout << "exiting...";
+            break;
         }
     return 0;
     }
