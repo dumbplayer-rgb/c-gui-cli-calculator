@@ -2,8 +2,8 @@
 #include <iostream>
 #include <math.h>
 
-int option = 10;
-
+int option = 0;
+z
 //The menu telling the user which number correlates to what arithmetic oparation
 void showmenu(){
     std::cout << "option 1: addition\n"
