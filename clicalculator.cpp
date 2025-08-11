@@ -3,7 +3,7 @@
 #include <math.h>
 
 int option = 0;
-z
+
 //The menu telling the user which number correlates to what arithmetic oparation
 void showmenu(){
     std::cout << "option 1: addition\n"
@@ -31,7 +31,7 @@ void input() {
     }
 }
 
-//All of the functions for all of the arithmetic oparations including addition subtraction divsion multiplication root and square root
+//All of the functions for all of the arithmetic oparations including addition subtraction division multiplication root and square root
 void addition() {
     double c;
     c = a + b;
