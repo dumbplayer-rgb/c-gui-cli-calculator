@@ -72,42 +72,40 @@ void sqroot(){
 int main() {
     std::cout << "Hello, There! This is my calculator I wrote in c++\n";
     showmenu();
-    while (true) {
-        std::cin >> option;
-        if (option == 1) {
-            std::cout << "addition selected\n";
-            input();
-            addition();
-        }
-        if (option == 2) {
-            std::cout << "subtraction selected\n";
-            input();
-            subtraction();
-        }
-        if (option == 3) {
-            std::cout << "multiplication selected\n";
-            input();
-            multiplication();
-        }
-        if (option == 4) {
-            std::cout << "division selected\n";
-            input();
-            division();
-        }
-        if (option == 5){
-            std::cout << "root selected";
-            input();
-            root();
-        }
-        if (option == 6){
-            std::cout << "square root selected";
-            input();
-            sqroot();
-        }
-        if (option == 7){
-            std::cout << "exiting...";
-            break;
-        }
+    std::cin >> option;
+    switch (option)
+    {
+    case 1:
+        std::cout << "addition selected\n";
+        input();
+        addition();
+    case 2:
+        std::cout << "subtraction selected\n";
+        input();
+        subtraction();
+        break;
+    case 3:
+        std::cout << "multiplication selected\n";
+        input();
+        multiplication();
+    case 4:
+        std::cout << "division selected\n";
+        input();
+        division();
+    case 5:
+        std::cout << "root selected\n";
+        input();
+        root();
+    case 6:
+        std::cout << "square root selected\n";
+        input();
+        sqroot();
+    case 7:
+        std::cout << "exiting...\n";
+        break;
+    default:
+        break;
+
     return 0;
     }
 }
