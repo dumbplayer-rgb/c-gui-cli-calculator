@@ -1,6 +1,6 @@
 #include <cmath>
 #include <iostream>
-#include <math.h>
+#include <time.h>
 
 int option = 0;
 
@@ -67,12 +67,8 @@ void sqroot(){
     c = sqrt(a);
     std::cout << c;
 }
-
-//int main for all of the initlization
-int main() {
-    std::cout << "Hello, There! This is my calculator I wrote in c++\n";
-    showmenu();
-    std::cin >> option;
+void optionswitchcase() {
+       std::cin >> option;
     switch (option)
     {
     case 1:
@@ -104,8 +100,16 @@ int main() {
         std::cout << "exiting...\n";
         break;
     default:
-        break;
-
-    return 0;
+        break;    
     }
+}
+
+//int main for all of the functions to be called
+//and the menu to be shown to the user
+int main() {
+    std::cout << "Hello, There! This is my calculator I wrote in c++\n";
+    showmenu();
+    optionswitchcase();
+    return 0;
+    
 }
